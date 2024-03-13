@@ -7,7 +7,6 @@ public class Storage {
   private String type;
   private int readSpd;
   private int writeSpd;
-
   private OS operatingSystem;
 
   public String getBrand() {
