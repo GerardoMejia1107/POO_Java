@@ -1,21 +1,12 @@
 package Clase1_ClasesyObjetos.ClasesPC;
 
-public class Storage {
+public class Storage extends Components {
 
-  private String brand;
   private int capacityInGB;
   private String type;
   private int readSpd;
   private int writeSpd;
   private OS operatingSystem;
-
-  public String getBrand() {
-    return brand;
-  }
-
-  public void setBrand(String brand) {
-    this.brand = brand;
-  }
 
   public int getCapacityInGB() {
     return capacityInGB;

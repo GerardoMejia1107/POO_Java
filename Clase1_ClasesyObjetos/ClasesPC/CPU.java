@@ -1,9 +1,8 @@
 package Clase1_ClasesyObjetos.ClasesPC;
 
-public class CPU {
+public class CPU extends Components {
 
   private String cpuName;
-  private String brand;
   private int threads;
   private int cores;
   private int busSpeed;
@@ -12,10 +11,6 @@ public class CPU {
 
   public String getCPUName() {
     return cpuName;
-  }
-
-  public String getBrand() {
-    return brand;
   }
 
   public int getThreads() {
@@ -33,10 +28,5 @@ public class CPU {
   //Setters methods
   public void setCOPUName(String cpuName) {
     this.cpuName = cpuName;
-  }
-
-  public void setBrand(String brand) {
-    this.brand = brand;
-    System.out.println(this);
   }
 }

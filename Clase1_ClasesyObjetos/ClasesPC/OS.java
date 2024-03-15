@@ -1,18 +1,9 @@
 package Clase1_ClasesyObjetos.ClasesPC;
 
-public class OS {
+public class OS extends Components {
 
-  private String brand;
   private String name;
   private String version;
-
-  public String getBrand() {
-    return brand;
-  }
-
-  public void setBrand(String brand) {
-    this.brand = brand;
-  }
 
   public String getName() {
     return name;

@@ -3,42 +3,39 @@ package Clase1_ClasesyObjetos.ClasesPC;
 public class Main {
 
   public static void main(String[] args) {
-    RAM memoria = new RAM(); //Instancia, creación de un objeto
+    RAM ram = new RAM(); //Instancia, creación de un objeto
     CPU cpu = new CPU();
-    Storage almacenamiento = new Storage(); 
+    Storage almacenamiento = new Storage();
     OS os = new OS();
     Motherboard myPc = new Motherboard();
 
-    //memoria sets
-    memoria.setBrand("Kingston");
-    memoria.setModel("Fury");
-    memoria.setRgb(true);
-    memoria.setFreq(4200);
+    //Declaring some values for ram object
+    ram.setBrand("Corsair"); //this method is inherited from the parent class component
+    ram.setModel("Rz-1"); //this method is inherited from the parent class component
+    ram.setFreq(2400);
 
-    //cpu sets
-    cpu.setBrand("Intel");
-    cpu.setCOPUName("gerardo");
+    //Declaring some values for cpu object
+    cpu.setBrand("Dell");
+    cpu.setModel("Dell-12");
+    cpu.setCOPUName("Gerardo cpu");
 
-    //os sets
-    os.setBrand("Linux");
-    os.setName("gerardo");
-    os.setVersion("v -1.0");
-    
-    //almacenamiento sets
-    almacenamiento.setBrand("Kingston");
-    almacenamiento.setCapacityInGB(10000);
+    //Declaring some values for almacenamiento object
+    almacenamiento.setBrand("Intel");
+    almacenamiento.setCapacityInGB(5000);
+    almacenamiento.setModel("i7");
     almacenamiento.setOperatingSystem(os);
-    almacenamiento.setType("SSD");
-    almacenamiento.setReadSpd(200);
-    almacenamiento.setWriteSpd(400);
-    
 
-    //motherboard sets
-    myPc.setRam(memoria);
-    myPc.setBrand("Asus");
-    myPc.setModel("VivoBook");
-    myPc.setStorage(almacenamiento);
+    //Declaring some values for os object
+    os.setBrand("Linux");
+    os.setModel("Ubuntu");
+    os.setVersion("18.04");
+
+    //Declaring some values for myPc object
+    myPc.setBrand("MacOS");
+    myPc.setModel("MacOS");
+    myPc.setRam(ram);
     myPc.setCpu(cpu);
-
+    myPc.setStorage(almacenamiento);
+    System.out.println(myPc.getRam().getBrand());
   }
 }

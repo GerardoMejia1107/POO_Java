@@ -1,28 +1,10 @@
 package Clase1_ClasesyObjetos.ClasesPC;
 
-public class PSU {
+public class PSU extends Components {
 
-  private String brand;
-  private String model;
   private double voltage;
   private double current;
   private String certification;
-
-  public String getBrand() {
-    return brand;
-  }
-
-  public void setBrand(String brand) {
-    this.brand = brand;
-  }
-
-  public String getModel() {
-    return model;
-  }
-
-  public void setModel(String model) {
-    this.model = model;
-  }
 
   public double getVoltage() {
     return voltage;
