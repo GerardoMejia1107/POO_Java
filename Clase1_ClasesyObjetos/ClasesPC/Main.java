@@ -5,7 +5,7 @@ public class Main {
   public static void main(String[] args) {
     RAM ram = new RAM(); //Instancia, creación de un objeto
     CPU cpu = new CPU();
-    Storage almacenamiento = new Storage();
+    Storage almacenamiento = new Storage("almacenamiento");
     OS os = new OS();
     Motherboard myPc = new Motherboard();
 

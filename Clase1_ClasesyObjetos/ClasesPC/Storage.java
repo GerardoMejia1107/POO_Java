@@ -51,4 +51,12 @@ public class Storage extends Components {
   public String getOSVersion() {
     return operatingSystem.getVersion();
   }
+
+  /**
+   * It will initialize the value of the type of Storage
+   * @param type is a string
+   */
+  public Storage(String type) {
+    this.type = type;
+  }
 }

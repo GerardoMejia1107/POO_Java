@@ -1,5 +1,7 @@
 package Clase1_ClasesyObjetos.ClasesPC;
 
+import java.util.ArrayList;
+
 public class Motherboard extends Components {
 
   private CPU cpu;
